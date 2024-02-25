@@ -1,6 +1,6 @@
 import java.util.Dictionary;
 
-// Kacper Wiszniewski - ISSP - II rok - semestr 4
+// Kacper Wiszniewski 338066 - ISSP - II rok - semestr 4
 public class Main {
     // zadanie nr 1
     static String lista1(int x)
