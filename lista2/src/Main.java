@@ -105,12 +105,24 @@ public class Main {
             druk(w)
         */
         int[] wLine = {1};
+        int firstElement = 1;
         for (int i = 0; i <= height - 1 ; i++)
         {
-            for (int j = 0; j < wLine.length; j++)
+            int temp = 1;
+            int nextTemp = 1;
+            for (int j = 0; j < i; j++)
             {
-                System.out.print(j);
+                if (j == 0 || j == i - 1)
+                    System.out.print(firstElement);
+                else
+                {
+                    int k = nextTemp;
+                    nextTemp = temp + nextTemp;
+                    temp = k;
+                    System.out.print(nextTemp);
+                }
             }
+            System.out.println(firstElement);
             System.out.println("");
         }
     }
@@ -142,6 +154,6 @@ public static void main(String[] args)
         }
         // Task 3
         System.out.println("\nTask 3");
-        pascalPyramid(3);
+        pascalPyramid(5);
     }
 }
